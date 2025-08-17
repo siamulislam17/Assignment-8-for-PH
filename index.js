@@ -99,6 +99,15 @@ console.log(`Array without duplicates: ${removeDuplicates([1, 2, 2, 3, 4, 4])}`)
 // Input: [1, 2, 3, 4]
 // Output: 10
 
+const sumOfArray = (value) => {
+    let sum = 0;
+    for (let i =0; i < value.length; i++){
+        sum = sum + value[i];
+    }
+    return sum;
+}
+
+console.log(`Sum of Array: ${sumOfArray([1, 2, 3, 4])}`);
 
 // Problem 7: Find Even Numbers in an Array
 // Write a function that returns all even numbers from a given array.
