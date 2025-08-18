@@ -1,18 +1,3 @@
-// may use functions, loops, conditionals, array methods, or string methods where necessary.
-
-
-
-// Rules and Regulations
-// Solve all 10 problems.
-// Pick any 5 problems and explain your solutions in a 5-minute video with screen recording and voice-over.
-// Use only plain JavaScript.
-// Do your own logic to solve the problems - copying or AI-generated answers will lead to disqualification.
-// We care more about your logic and explanation than perfect code. 
-// Create a public GitHub repository and upload your code there.
-
-
-
-
 // Problem 1: Reverse a String
 // Write a function that takes a string and returns it reversed.
 
@@ -94,10 +79,6 @@ console.log(`Array without duplicates: ${removeDuplicates([1, 2, 2, 3, 4, 4])}`)
 // Problem 6: Sum of All Numbers in an Array
 // Write a function that returns the sum of all numbers in an array.
 
-// Example:
-
-// Input: [1, 2, 3, 4]
-// Output: 10
 
 const sumOfArray = (value) => {
     let sum = 0;
@@ -117,40 +98,71 @@ console.log(`Sum of Array: ${sumOfArray([1, 2, 3, 4])}`);
 // Input: [1, 2, 3, 4, 5, 6]
 // Output: [2, 4, 6]
 
+const evenNumber = (value) => {
+    let even = [];
+    for (let i =0; i < value.length; i++){
+        if(value[i] % 2 === 0){
+            even.push(value[i]);
+        }
+    }
+    return even;
+}
+
 
 // Problem 8: Capitalize First Letter of Each Word
 // Write a function that capitalizes the first letter of each word in a string.
 
-// Example:
 
-// Input: "hello world"
-// Output: "Hello World"
+const capitalFirstLetter = ( value ) => {
+    let words = value.split(" ");
+    for ( let i = 0; i < words.length; i++) {
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+    }
+    return words.join(" ");
+}
+console.log(`Capitalized First Letter: ${capitalFirstLetter("hello world")}`);
+
 
 
 // Problem 9: Find the Factorial of a Number
 // Write a function that calculates the factorial of a number using a loop.
 
-// Example:
+const factorialNumber = (number) => {
+    let factorial = 1;
+    for (let i = 1; i <= number; i++) {
+        factorial = factorial * i;
+    }
+    return factorial;
+}
 
-// Input: 5
-// Output: 120
-
+console.log(`Factorial : ${factorialNumber(5)}`);
 
 // Problem 10: PingPong Challenge
 // Write a function that prints numbers from 1 to 20.
 
 // Example:
-
 // For multiples of 3, print "Ping"
 // For multiples of 5, print "Pong"
 // For multiples of both 3 and 5, print "PingPong"
 // If the number is not a multiple of 3 or 5, print the number itself
-// Example Output:
-
-// 1, 2, Ping, 4, Pong, Ping, 7, 8, Ping, Pong, 11, Ping, 13, 14, PingPong, 16 …..
 
 
-// What to SUBMIT
+const pingPongChallenge = () => {
+    let result = [];
+    for(let i = 1; i <= 20; i++) {
+        if( i % 3 === 0 && i % 5 === 0) {
+            result.push("PingPong");
+        } else if (i % 3 === 0) {
+            result.push("Ping");
+        } else if (i % 5 === 0) {
+            result.push("Pong");
+        } else {
+            result.push(i);
+        }
+    }
+    return result;
+}
 
-// A public GitHub repository link containing your code for all 10 problems.
-// Share a single Google Drive link (anyone can view) to a video (max 5 minutes) where you explain your solutions for any 5 problems, including screen recording and voice-over
+console.log(`PingPong Challenge: ${pingPongChallenge()}`);
+
+
