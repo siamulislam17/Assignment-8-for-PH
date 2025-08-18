@@ -5,9 +5,10 @@ const reversedString = ( value ) =>{
     return value.split("").reverse().join("");
 }
 
-console.log(`Reversed String: ${reversedString("hello")}`);
+// console.log(`Reversed String: ${reversedString("hello")}`);
 
 
+//........................................................................................
 // Problem 2: Count Vowels in a String
 // Write a function that counts how many vowels (a, e, i, o, u) are in a given string.
 
@@ -23,9 +24,11 @@ const countVowels = (value) => {
     return count ;
 }
 
-console.log(`Count of vowels is: ${countVowels("programming")}`);
+// console.log(`Count of vowels is: ${countVowels("programming")}`);
 
 
+
+//..........................................................................................
 // Problem 3: Check for Palindrome
 // Write a function that checks if a string is a palindrome (reads the same forward and backward).
 
@@ -38,9 +41,11 @@ const isPalindrome = ( value ) => {
     }
 }
 
-console.log(`Is Palindrome: ${isPalindrome("madam")}`);
-console.log(`Is Palindrome: ${isPalindrome("hello")}`);
+// console.log(`Is Palindrome: ${isPalindrome("madam")}`);
+// console.log(`Is Palindrome: ${isPalindrome("hello")}`);
 
+
+//...........................................................................................
 // Problem 4: Find the Maximum Number
 // Write a function that takes an array of numbers and returns the largest number.
 
@@ -55,10 +60,12 @@ const largeNumber = (value) =>{
     return maxValue;
 }
 
-console.log(`Largest Number: ${largeNumber([5, 1, 9, 3])}`);
+// console.log(`Largest Number: ${largeNumber([5, 1, 9, 3])}`);
 
 
 
+
+//...........................................................................................
 // Problem 5: Remove Duplicates from an Array
 // Write a function that removes all duplicate numbers from an array.
 
@@ -74,8 +81,12 @@ const removeDuplicates = (value) => {
     return uniqueValues;
 }
 
-console.log(`Array without duplicates: ${removeDuplicates([1, 2, 2, 3, 4, 4])}`);
+// console.log(`Array without duplicates: ${removeDuplicates([1, 2, 2, 3, 4, 4])}`);
 
+
+
+
+//...........................................................................................
 // Problem 6: Sum of All Numbers in an Array
 // Write a function that returns the sum of all numbers in an array.
 
@@ -88,8 +99,12 @@ const sumOfArray = (value) => {
     return sum;
 }
 
-console.log(`Sum of Array: ${sumOfArray([1, 2, 3, 4])}`);
+// console.log(`Sum of Array: ${sumOfArray([1, 2, 3, 4])}`);
 
+
+
+
+//...........................................................................................
 // Problem 7: Find Even Numbers in an Array
 // Write a function that returns all even numbers from a given array.
 
@@ -108,7 +123,11 @@ const evenNumber = (value) => {
     return even;
 }
 
+// console.log(`Even Numbers: ${evenNumber([1, 2, 3, 4, 5, 6])}`);
 
+
+
+//...........................................................................................
 // Problem 8: Capitalize First Letter of Each Word
 // Write a function that capitalizes the first letter of each word in a string.
 
@@ -120,10 +139,12 @@ const capitalFirstLetter = ( value ) => {
     }
     return words.join(" ");
 }
-console.log(`Capitalized First Letter: ${capitalFirstLetter("hello world")}`);
+// console.log(`Capitalized First Letter: ${capitalFirstLetter("hello world")}`);
 
 
 
+
+//...........................................................................................
 // Problem 9: Find the Factorial of a Number
 // Write a function that calculates the factorial of a number using a loop.
 
@@ -135,8 +156,13 @@ const factorialNumber = (number) => {
     return factorial;
 }
 
-console.log(`Factorial : ${factorialNumber(5)}`);
+// console.log(`Factorial : ${factorialNumber(5)}`);
 
+
+
+
+
+//...........................................................................................
 // Problem 10: PingPong Challenge
 // Write a function that prints numbers from 1 to 20.
 
@@ -163,6 +189,6 @@ const pingPongChallenge = () => {
     return result;
 }
 
-console.log(`PingPong Challenge: ${pingPongChallenge()}`);
+// console.log(`PingPong Challenge: ${pingPongChallenge()}`);
 
 
